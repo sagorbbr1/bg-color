@@ -6,11 +6,13 @@ window.onload = function () {
 function main () {
     const btn = document.querySelector('#btn');
     const root = document.querySelector('#root');
+    const color = document.querySelector('#color');
+
 
     
     btn.addEventListener('click', function () {
         const bgColor = createRGB();
-        
+        color.textContent = createRGB();
 
         root.style.backgroundColor = bgColor;
     
